@@ -12,7 +12,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/school?useTimezone=true&amp;serverTimezone=UTC&amp;autoReconnect=true&amp;useSSL=false
+            jdbc:mysql://localhost/schooldb?useTimezone=true&amp;serverTimezone=UTC&amp;autoReconnect=true&amp;useSSL=false
         </property>
         <property name="hibernate.connection.username">
             root

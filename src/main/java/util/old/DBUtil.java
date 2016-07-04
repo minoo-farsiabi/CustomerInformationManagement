@@ -16,7 +16,7 @@ public class DBUtil {
     }
 
     private static final String driverDatabase = "com.mysql.cj.jdbc.Driver";
-    private static final String connectionPrefix = "jdbc:mysql://localhost/school?";
+    private static final String connectionPrefix = "jdbc:mysql://localhost/schooldb?";
     private static final String databaseUsername = "root";
     private static final String databasePassword = "minmin";
 
