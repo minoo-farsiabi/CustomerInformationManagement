@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.entity.LoanFileEntity" table="loanfile">
+        <meta attribute="class-description">
+            This class contains the grant condition records.
+        </meta>
+        <id name="loanFileId" type="long" column="loanFileId">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="loanType" class="model.entity.LoanTypeEntity" fetch="select">
+            <column name="loanType" not-null="true"/>
+        </many-to-one>
+        <property name="loanFileOwnerId" column="loanFileOwnerId" type="long"/>
+        <property name="durationInDays" column="duration" type="int"/>
+        <property name="price" column="price" type="long" />
+    </class>
+</hibernate-mapping>

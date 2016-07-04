@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.entity.GrantConditionEntity" table="grantcondition">
+        <meta attribute="class-description">
+            This class contains the grant condition records.
+        </meta>
+        <id name="grantConditionId" type="long" column="grantConditionId">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="loanType" class="model.entity.LoanTypeEntity" fetch="select">
+            <column name="loanTypeId" not-null="true"/>
+        </many-to-one>
+        <property name="grantConditionName" column="grantConditionName" type="string"/>
+        <property name="minimumDurationDays" column="minimumDurationDays" type="int"/>
+        <property name="maximumDurationDays" column="maximumDurationDays" type="int"/>
+        <property name="minimumBalance" column="minimumBalance" type="long"/>
+        <property name="maximumBalance" column="maximumBalance" type="long"/>
+    </class>
+</hibernate-mapping>

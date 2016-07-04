@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'BNazaninFont';
+    src: url('Assets/BNazaninRegular.ttf');
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: white;
+}
+
+#realCustomers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#realCustomers td, #realCustomers th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+}
+
+#realCustomers tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#realCustomers tr:hover {
+    background-color: #ddd;
+}
+
+#realCustomers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#legalCustomers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#legalCustomers td, #legalCustomers th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+}
+
+#legalCustomers tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#legalCustomers tr:hover {
+    background-color: #ddd;
+}
+
+#legalCustomers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #008CBA;
+    color: white;
+}
+
+.realCustomerButton {
+    width: 30%;
+    height: 20%;
+    align-self: center;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10%;
+}
+
+.realCustomerButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.legalCustomerButton {
+    width: 30%;
+    height: 20%;
+    align-self: center;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px !important;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10%;
+}
+
+.legalCustomerButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.createLoanTypeButton {
+    width: 30%;
+    height: 20%;
+    align-self: center;
+    background-color: #ab82ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px !important;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10%;
+}
+
+.addRealCustomerButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 4px;
+    padding: 1px, 1px, 1px, 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.addLegalCustomerButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 4px;
+    padding: 1px, 1px, 1px, 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.realCustomerField {
+    cursor: pointer;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    align-self: center;
+}
+
+.legalCustomerField {
+    cursor: pointer;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #ccc;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    align-self: center;
+}
+
+.newCustomerLabel {
+    color: black;
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'BNazaninFont';
+}
+
+.submitNewCustomer {
+    width: 20%;
+    height: 10%;
+    align-self: center;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.returnButton {
+    width: 20%;
+    height: 10%;
+    align-self: center;
+    background-color: #ab82ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancelRealSearch {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    background-image: url('Assets/rightArrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.cancelLegalSearch {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #008CBA;
+    background-image: url('Assets/rightArrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.searchRealCustomerButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    background-image: url('Assets/searchIconBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.searchLegalCustomerButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #008CBA;
+    background-image: url('Assets/searchIconBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.editButton {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: white;
+    background: url("Assets/editIcon.png");
+}
+
+.deleteButton {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: white;
+    background: url("Assets/deleteIcon.png");
+}
+
+.searchRealButton {
+    cursor: pointer;
+    width: 10%;
+    height: 5%;
+    border: none;
+    border-radius: 40px;
+    background-color: #4CAF50;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.searchLegalButton {
+    cursor: pointer;
+    width: 10%;
+    height: 5%;
+    border: none;
+    border-radius: 40px;
+    background-color: #008CBA;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.searchBox {
+    width: 15%;
+    height: 5%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    margin-right: 5em;
+}
+
+.continueButton {
+    cursor: pointer;
+    width: 10%;
+    height: 5%;
+    border: none;
+    border-radius: 40px;
+    background-color: #4CAF50;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.errorLabel {
+    list-style-type: disc;
+    margin: 0 10px 15px 10px;
+    padding: 8px 35px 8px 30px;
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 2px solid #EED3D7;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+html * {
+    color: #000 !important;
+    font-family: BNazaninFont !important;
+}
+
+body {
+    background-size: 100% 100%;
+    background-image: url("Assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
